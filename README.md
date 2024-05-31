@@ -2,12 +2,6 @@
 
 This API provides advanced capabilities for searching and managing phrases and video games. It utilizes NestJS and TypeORM with PostgreSQL to offer a robust and scalable backend.
 
-## Demo
-
-Interact with the API using the following URL:
-
-[Go to example URL API →](http://localhost:3000/api_swagger_documentation)
-
 ## Features
 
 - **Phrase Search:** Allows searching for phrases using ILike functionality, with support for pagination and sorting.
@@ -73,6 +67,11 @@ To start the server in production, use:
 npm run build
 npm start
 ```
+
+## Swagger URL
+Interact with the API using the following URL after deploying the server here:
+
+[Go to example URL API →](http://localhost:3000/api_swagger_documentation)
 
 ## Project Folder Structure
 
@@ -157,9 +156,18 @@ To contribute, create a branch from `dev` following the appropriate prefix (`fea
 - **Use of Decorators for Documentation and Validation:** Swagger decorators (`@ApiOperation`, `@ApiResponse`, `@ApiQuery`) are used to automatically document and validate endpoints, improving code clarity and self-documentation.
 - **Centralized Exception Handling:** The use of the exception filter (`HttpExceptionFilter`) centralizes error handling, providing more consistent error management and simplifying code in controllers and services.
 
-# License
-This project is licensed under Creative Commons CC BY 4.0.
+---
 
-## Creative Commons License
+Enjoy using Postgres API as much as I enjoyed developing it!
+
+Best regards, **Samuel Quintero Solís**
+
+[samuelquisol@gmail.com](mailto:samuelquisol@gmail.com)
+
+## License
+
+This project is licensed under the Creative Commons [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
+![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)
+
 You are free to use and redistribute this work for any purpose, provided appropriate credit is given.
-
