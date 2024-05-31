@@ -6,16 +6,7 @@ This API provides advanced capabilities for searching and managing phrases and v
 
 Interact with the API using the following URL:
 
-[Go to API](#)
-
-To log in as an admin, you can use the following credentials:
-
-```json
-{
-  "email": "admin@admin.com",
-  "password": "adminpassword"
-}
-```
+[Go to example URL API →](http://localhost:3000/api_swagger_documentation)
 
 ## Features
 
@@ -72,17 +63,16 @@ Create a `.env` file in the root of the project and add the following variables:
 ## Development Commands
 
 To start the server in development mode, use:
-bash
-Copiar código
+```bash
 npm run start:dev
+```
 
 ## Production Deployment
-
 To start the server in production, use:
-bash
-Copiar código
+```bash
 npm run build
 npm start
+```
 
 ## Project Folder Structure
 
@@ -167,8 +157,9 @@ To contribute, create a branch from `dev` following the appropriate prefix (`fea
 - **Use of Decorators for Documentation and Validation:** Swagger decorators (`@ApiOperation`, `@ApiResponse`, `@ApiQuery`) are used to automatically document and validate endpoints, improving code clarity and self-documentation.
 - **Centralized Exception Handling:** The use of the exception filter (`HttpExceptionFilter`) centralizes error handling, providing more consistent error management and simplifying code in controllers and services.
 
-**Enjoy using Postgres API as much as I enjoyed developing it!**
+# License
+This project is licensed under Creative Commons CC BY 4.0.
 
-Best regards,  
-Samuel Quintero Solís  
-samuelquisol@gmail.com
+## Creative Commons License
+You are free to use and redistribute this work for any purpose, provided appropriate credit is given.
+
