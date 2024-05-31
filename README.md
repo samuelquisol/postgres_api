@@ -98,16 +98,7 @@ The organization of source code within the `src` folder includes:
 - **`app.module.ts`:** Main application module.
 - **`main.ts`:** Entry point of the application.
 
-## Gitflow Branching Strategy
-
-This project implements the Gitflow branching strategy:
-
-- **`main`:** Contains production code.
-- **`dev`:** Development branch where new features are integrated.
-- **`feat/*`:** Branches for new features.
-- **`fix/*`:** Branches for bug fixes.
-
-To contribute, create a branch from `dev` following the appropriate prefix (`feat/` or `fix/`) depending on the type of work. Then, create a Pull Request towards `dev`.
+---
 
 ## Exception Filter Configuration
 
@@ -155,6 +146,18 @@ To contribute, create a branch from `dev` following the appropriate prefix (`fea
 - **Separation of Business Logic and Controller:** The search logic is kept in the service (`PhrasesService`), while the controller (`PhrasesController`) only handles HTTP requests and calls the service. This follows the principle of separation of concerns.
 - **Use of Decorators for Documentation and Validation:** Swagger decorators (`@ApiOperation`, `@ApiResponse`, `@ApiQuery`) are used to automatically document and validate endpoints, improving code clarity and self-documentation.
 - **Centralized Exception Handling:** The use of the exception filter (`HttpExceptionFilter`) centralizes error handling, providing more consistent error management and simplifying code in controllers and services.
+
+---
+## Gitflow Branching Strategy
+
+This project implements the Gitflow branching strategy:
+
+- **`main`:** Contains production code.
+- **`dev`:** Development branch where new features are integrated.
+- **`feat/*`:** Branches for new features.
+- **`fix/*`:** Branches for bug fixes.
+
+To contribute, create a branch from `dev` following the appropriate prefix (`feat/` or `fix/`) depending on the type of work. Then, create a Pull Request towards `dev`.
 
 ---
 
